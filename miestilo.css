@@ -30,7 +30,7 @@ body {
 
 .hero-text {
     height: 400px;
-    color: white;
+    color: grey;
     display: flex;
     flex-direction: column;
     justify-content: center;

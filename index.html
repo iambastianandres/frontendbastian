@@ -1,0 +1,146 @@
+<!-- DOCTYPE indica el tipo de documento -->
+<!DOCTYPE html>
+<!-- html indica el inicio de la web, lang es el idioma de la web -->
+<html lang="es">
+<!-- head es el encabezado, no es visible en la página -->
+
+<head>
+    <!-- title es el titulo de la web, y se ve en la pestaña -->
+    <title>Mi WEB</title>
+    <!-- <style>
+        div{
+            /* background-color es el color fondo */
+            background-color: red;
+            /* color es el color de letra */
+            color:white;
+            
+        }
+    </style> -->
+    <!-- link sirve para referenciar los estilos css en mi web -->
+    <link rel="stylesheet" href="miestilo.css">
+</head>
+<!-- body es todo lo que se muestra la página -->
+
+<body>
+    <!-- header es el espacio de trabajo para el encabezado de la web -->
+    <nav>
+        <!-- ul es una lista ordenada -->
+        <ul>
+            <!-- li corresponde a los items de la lista -->
+            <li>Inicio</li>
+            <li>
+                <!-- tag a sirve para hipervinculos, href es un atributo del tag y sirve para redireccionar -->
+                <a href="https://portal.inacap.cl/">Inacap</a>
+            </li>
+            <li>
+                <!-- target es un atributo que sirve para abrir en otra pestaña -->
+                <a href="https://www.google.cl/" target="_blank">Google</a>
+            </li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3School</a></li>
+            <li><a href="https://chatgpt.com/" target="_blank">ChatGPT</a></li>
+            <li><a href="https://htmlcolorcodes.com/" target="_blank">Colores HTML</a></li>
+            <!-- puedo asignar en href un id dentro la web para navegar hacia ella -->
+            <li><a href="#foto">Fotos</a></li>
+            <li><a href="#video">Videos</a></li>
+        </ul>
+    </nav>
+    <!-- el atributo class sirve para llamar a los estilos -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Mi página WEB</h1>
+            <h3>Utilizando html para crar webs</h3>
+        </div>
+    </header>
+    <!-- nav es la etiqueda de html para el menú -->
+    <!-- main es el contenido principal -->
+    <main>
+        <div class="info">
+            <div class="contenido">
+                <h2 class="titulo">Contenido</h2>
+                <!-- div es un contenedor auxiliar -->
+                <div>
+                    <p class="titulo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate magnam
+                        molestiae cum, minima
+                        corporis facere aliquam, vel assumenda explicabo, totam alias veniam architecto. Incidunt
+                        architecto
+                        porro iure assumenda iste harum?</p>
+                </div>
+            </div>
+        </div>
+        <!-- sección de cartas -->
+        <!-- section es similar a un div -->
+        <section class="contenedor">
+            <h2 class="titulo">Tipos pogramación</h2>
+            <div class="contenedor-card">
+                <div class="card">
+                    <!--  i es el tag para los icons -->
+                    <i class="icono"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-front icono" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2z" />
+                        </svg></i>
+                    <h3>FrontEnd</h3>
+                    <p>Definición de front end</p>
+                    <div class="btndiv">
+                        <a href="" class="boton">Más Información</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <!--  i es el tag para los icons -->
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-balloon-fill icono" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224zM4.352 3.356a4 4 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5s-.226.496-.498.542c-.95.162-1.749.78-2.173 1.617a.6.6 0 0 1-.52.341c-.346 0-.599-.329-.457-.644" />
+                        </svg></i>
+                    <h3>BackEnd</h3>
+                    <p>Definición de back end</p>
+                    <div class="btndiv">
+                        <a href="" class="boton">Más Información</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <!--  i es el tag para los icons -->
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-battery-full icono" viewBox="0 0 16 16">
+                            <path d="M2 6h10v4H2z" />
+                            <path
+                                d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8" />
+                        </svg></i>
+                    <h3>FullStack</h3>
+                    <p>Definición de FullStack</p>
+                    <div class="btndiv">
+                        <a href="" class="boton">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sección de fotos -->
+        <div id="foto">
+            <h3>Fotos</h3>
+            <!-- img es la etiqueta para mostrar imagenes, tiene como atributos src que sirve para poner la dirección de la imagen, alt muestra un texto alternativo en caso de que no este la imagen. width es el ancho de la imagen y puede ser en pixeles o porcentajes, heigth es el alto de la imagen y también puede ser en pixeles o porcentajes  -->
+            <img src="img/img1.webp" alt="Aquí debe haber una fotito" width="500">
+            <!-- podemos copiar el link de intenet, no es recomendado porque no sabes donde está alojada esa imagen -->
+            <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2021/12/front-end-developer.png" alt=""
+                width="30%">
+        </div>
+        <!-- Videos -->
+        <div id="video">
+            <!-- video es el tag para añadir videos a mi web, src es el atributo que permite colocar la dicción, controls atributo para los controles de reproducción, autoplay permite la reproducción automatica, width es el anchoi del video, heigth es alto, muted permite dejar sin sonido el video por defecto -->
+            <video src="img/video.mp4" controls autoplay muted width="400"></video>
+            <!-- iframe es la etique que permite insertar elementos html de otras web -->
+            <iframe width="400" height="250"
+                src="https://www.youtube.com/embed/lZ0Wu7rFGGo?list=PL_Gg8iGB1yPiO92lFkS0B92pKEipSig_7"
+                title="¿Qué es un problema matemático y cómo se diferencia de un ejercicio?" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!-- br es la etiquepa para saltar  -->
+            <br>
+            <iframe src="https://es.wikipedia.org/wiki/Wikipedia:Portada" frameborder="0" width="600"
+                height="400"></iframe>
+        </div>
+    </main>
+    <!-- footer es el pie de página -->
+    <footer></footer>
+</body>
+
+</html>

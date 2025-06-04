@@ -1,0 +1,127 @@
+/* * sirve para aplicar estilos a todos los elementos de la web */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* se puede aplicar estilos a los tags html */
+body {
+    /* background-color es el color de fondo */
+    /* background-color: yellow !important;  */
+    /*important indica que este estilo es el que manda */
+    /* font-family es el tipo de letra a utilizar */
+    font-family: 'Segoe UI';
+}
+
+/* el . en css indica que el estilo será accedido por el atributo class del tag html */
+.hero {
+    /* alto del espacio */
+    height: 550px;
+    /* ancho*/
+    width: 100%;
+    /* background-image permite añadir una imagen de fondo */
+    background-image: linear-gradient(120deg, rgba(5, 3, 3, 0.459), rgba(172, 167, 167, 0.409)), url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px black;
+}
+
+/* menú */
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+/* hover se activa cuando paso el mouse */
+li a:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.info {
+    background: gray;
+    color: white;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.titulo {
+    font-weight: 300px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* sección tipos programación */
+.contenedor-card {
+    /* estable los tipos de visulaización de un lemento */
+    display: flex;
+    width: 100%;
+    /* define como el navegador distrubuye el espacio */
+    justify-content: space-evenly;
+    /* los elementos hijos permancen en línea */
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 0 3px gray;
+    width: 30%;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card:hover {
+    box-shadow: 0 0 6px gray;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.icono{
+    color: green;
+    margin: 40px 0 20px 0;
+}
+.boton{
+    background-color: peru;
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: red;
+    color: black;
+}
+.btndiv{
+    margin: 30px;
+    padding: 30px;
+}
